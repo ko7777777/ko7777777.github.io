@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Helper - Station Finder</title>
+    <meta name = "author" content = "Dakota">
+    <link rel = "stylesheet" href = "css/style_DMa083.css">
+    <link rel = "stylesheet" href = "css/nav_DMa083.css">
+    <script src="script/Script_DMa083.js"></script>
+</head>
+<body>
+    <header>
+        <h1>TripHelper</h1>
+        <p>Your Buddy to help you with Trips!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href = "page1_DMa083.html">Station Finder</a></li>
+            <li><a href = "page2_Dma083.html">Trip Cost Calculator</a></li>
+            <li><a href = "page3_Dma083.html">About Us/Help</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id ="instructions">
+            <h4>Instructions</h4>
+            <ul>
+                <li>Enter your Route using the dropdown menu.</li>
+                <li>Select your preferred distance for detour.</li>
+                <li>Click "Find Route" to see a map with your nearest station along side your route.</li>
+                <li>Station details will appear below.</li>
+            </ul>
+        </section>
+        <div class="routeFlex">
+        <section id ="stationFinder">
+            <h2>Plan Your Route</h2>
+            <form action = "" method="GET" onsubmit="return processRoute(this);" >
+                <fieldset id = "routeInfo"> 
+                    <legend>Your Route Information.</legend>
+                    <div>
+                        <label for="route">Route:</label>
+                        <select name="route" id="route" required>
+                            <option value ="">Select a Route</option>
+                            <option value ="nw-coq">Douglas New West to Douglas Coquitlam</option>
+                            <option value ="coq-nw">Douglas Coquitlam to Douglas New West</option>
+                            <option value ="nw-ec">Douglas New West to Emily Carr</option>
+                            <option value ="ec-nw">Emily Carr to Douglas New West</option>
+                        </select>
+                        <span class = "error-message"></span>
+                    </div>
+                    <div>
+                        <label for="detour">Distance to Detour:</label>
+                        <select name="detour" id = "detour" required>
+                            <option value="">Select a distance</option>
+                            <option value="1km">1 Kilometer</option>
+                            <option value="2km">2 Kilometers</option>
+                            <option value="5km">5 Kilometers</option>
+                        </select>
+                        <span class = "error-message"></span>
+                    </div>
+                    <div id = "submit">
+                        <input type="submit" value="Find Route">
+                        <input type="reset" value="Clear Input">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+            <iframe id="mapFrame"
+            width="100%"
+            height="600"
+            style="border:0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy = "no-referrer-when-downgrade"
+            src="">
+        </iframe>
+    </div>
+        <div id = "stationList">
+            <div id = "stationInfo"></div>
+        </div>
+        <div id = "error-message"></div>
+    </main>
+    <hr>
+    <p id = "copyright"><small>Copyright &copy;Dakota Marck 2025</small></p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Dakota">
+    <title>Trip Cost Calculator</title>
+    <link rel = "stylesheet" href = "css/style_DMa083.css">
+    <link rel = "stylesheet" href = "css/nav_DMa083.css">
+    <script src="script/Script2_DMa083.js"></script>
+</head>
+<body>
+    <header id = "TripCost"><h1>Trip Cost Calculator</h1>
+    <p>Just enter your Mileage, Price, and distance.</p></header>
+    
+    <nav>
+        <ul>
+            <li><a href = "page1_DMa083.html">Station Finder</a></li>
+            <li><a href = "page2_Dma083.html">Trip Cost Calculator</a></li>
+            <li><a href = "page3_Dma083.html">About Us/Help</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="tripCostCalc">
+            <h5>Your Trip Cost Calculator</h5>
+            <form id="tripForm" onsubmit="return calculateCost();">
+                <div class ="formFlex">
+                    <label for="mileage" required>Your Vehicle's Mileage (L/100km):</label>
+                    <input type = "number" id = "mileage" name = "mileage" min="1" step = "0.1" required>
+                </div>
+                <div class ="formFlex">
+                    <label for="distance" required>Distance of your Trip (km):</label>
+                    <input type = "number" id = "distance" name = "distance" min="1" step = "0.1" required>
+                </div>
+                <div class ="formFlex">
+                    <label for="price" required>Gas Price ($/L):</label>
+                    <input type = "number" id = "price" name = "price" min="1" step = "0.01" required>
+                </div>
+                <div class ="formFlex">
+                    <input type = "submit" value="Calculate">
+                    <input type = "reset" value = "Clear">
+                </div>
+            </form>
+        </section>
+        <div id="costResult"></div>
+    </main>
+    <hr>
+    <p id = "copyright"><small>Copyright &copy;Dakota Marck 2025</small></p>
+    
+</body>
+</html>

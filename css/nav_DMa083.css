@@ -1,0 +1,27 @@
+
+nav{
+
+    width:100%;
+    overflow:visible;
+}
+nav ul{
+    list-style-type: none;
+}
+nav > ul > li{
+    text-align:center;
+    width:33.3333%;
+    float:left;
+    line-height: 2em;
+    overflow:auto;
+}
+nav > ul > li > a{
+    transition: background .5s;
+    background:lightgoldenrodyellow;
+    font-size: 150%;
+    color:black;
+    text-decoration: none;
+    display:block;
+    text-align: center;
+}
+nav > ul > li > a:hover
+{background-color:darkgreen;}

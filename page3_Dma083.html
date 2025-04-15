@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Dakota">
+    <title>About Us</title>
+    <link rel = "stylesheet" href = "css/style_DMa083.css">
+    <link rel = "stylesheet" href = "css/nav_DMa083.css">
+    <script src = "script/Script3_DMa083.js"></script>
+</head>
+<body>
+    <header id = "About"></header>
+    <nav>
+        <ul>
+            <li><a href = "page1_DMa083.html">Station Finder</a></li>
+            <li><a href = "page2_Dma083.html">Trip Cost Calculator</a></li>
+            <li><a href = "page3_Dma083.html">About Us/Help</a></li>
+        </ul>
+    </nav>
+    <article id = "video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eEdPaZp6vXI?si=ZUWE4C-krF6rLciP" title="YouTube video player" frameborder="0" allow="accelerometer; 
+        autoplay; clipboard-write; 
+        encrypted-media; gyroscope; 
+        picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </article>
+    <article id = "story">
+        <h1>The Story of this Website.</h1>
+        <p>An interesting idea came to my mind and im not sure if its been done before.</p>
+        <p>I had the idea of creating an online tool to assist you with every commute.</p>
+        <p>The most interesting part to me is implementing google maps.</p>
+        <p>This online tool comes equip with a fully interactive map and insightful calculator.</p>
+        <p>I have aspirations of working in GIS and maps have always interested me.</p>
+        <p>I see myself working on things like this in the future for quality of life.</p>
+        <p>Thank you for visiting</p>
+        <p>Dakota Marck</p>
+    </article>
+    <article id="contact">
+        <form action="" method="get" onsubmit = "return processContact(this);">
+            <fieldset id = "Info">
+                <Legend>Contact Information Form.</Legend>
+                <div id = "ContactRow">
+                    <label for = "firstName">First Name:</label>
+                    <input type = "text" name = "fName" id = "fName" value = "First Name" required>
+                </div>
+                <div id = "ContactRow">
+                    <label for = "lastName">Last Name:</label>
+                    <input type = "text" name = "lName" id = "lName" value="Last Name" required>
+                </div>
+                <div id = "ContactRow">
+                    <label for = "pNumber">Phone Number:</label>
+                    <input type = "tel" name = "pNumber" id = "pNumber" value = "(XXX)-XXX-XXXX" required>
+                </div>
+                <div id = "ContactRow">
+                    <label for = "Email">Email:</label>
+                    <input type = "email" name = "Email" id = "Email" value = "xxx123@xxx.com" required>
+                </div>
+                <div id = "ContactRow">
+                    <input type = "submit" value="Submit">
+                    <input type = "reset" value = "Clear">
+                </div>
+        </form>
+        <h2></h2>
+        <div id = "ContactResult">
+
+        </div>
+    </article>
+    <hr>
+    <p id = "copyright"><small>Copyright &copy;Dakota Marck 2025</small></p>
+    
+</body>
+</html>

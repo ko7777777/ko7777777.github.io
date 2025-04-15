@@ -1,0 +1,19 @@
+Dakota Marck 300365083
+
+I am making a trip helper, an online tool to help anyone ready for their commute, the tool will help with routes, and finding gas stations nearby, it will also help calculate the price of a trip. There are similar online tools already out there for calculating trip prices, however i havent heard of an idea like the station finder. I have some aspirations of working in GIS and this project is a good start.
+
+I Implemented most basic things from class, for CSS i refrained from using float as much and focused on flex for its multi platform capabilities. i did not utilize any css gridbox. I kept my styling and layout simple for the most part.
+
+I have 3 pages, the first page is a station finder, you input your route and the distance you are willing to detour to get to a gas station, and a gas station is displayed on a interactive google map along with gas station information such as location and name. The second page is a basic calculator that only needs three inputs, in order to figure out how much money will be spent on gas. Finally my third page is an About us section. It will include a short segment on why i made the project, as well as a youtube video embedded showing the user how to operate the website. FInally in the third page there will be a contact form to collect the users name, email, feedback, and rating!
+
+Images-
+https://www.canadianfuels.ca/our-industry/gasoline-prices/https://www.cbc.ca/news/canada/british-columbia/gas-prices-carbon-tax-british-columbia-1.7499164
+https://en.wikipedia.org/wiki/Map#/media/File:Physical_World_Map.svg
+https://gallery.yopriceville.com/Free-Clipart-Pictures/School-Clipart/Calculator_PNG_Image
+https://80.lv/articles/desert-gas-station-environment-production-breakdown/
+
+My Highlight is the station finder, i found it difficult to implement the interactive map, as well as add detours to the routes. It actually involves signing up for google cloud services and registering an API key for google maps just for the map to display. I also had to search outside of typical study sources. (developers google) I also believe it is the most interesting portion of the project and the "Main idea"
+
+https://www.w3schools.com/js/js_function_definition.asp
+CSIS 1280 - 001
+https://developers.google.com/maps/documentation/embed/embedding-map

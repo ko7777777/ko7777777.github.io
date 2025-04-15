@@ -1,0 +1,312 @@
+/* Common CSS styling */
+*{margin:0;
+padding:0;
+box-sizing: border-box;}
+html{background-color:palegreen;}
+.routeFlex{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5em;
+    align-items:stretch;
+    margin-bottom:15px;
+}
+body{
+    width:100%;
+    background-image:url("../images/TripHelperBNR.png");
+    background-repeat:repeat-x;
+    background-clip:border-box;
+    padding-top:35px;
+    min-height:300px;
+    padding-bottom: 35px;
+}
+form{
+    flex: 1 1 350px;
+    min-width:300px;
+
+}
+#copyright{
+    margin:5px;
+}
+header {
+    height: 600px;
+    padding-top:50px;
+    position: relative;
+    background-image:url('../images/TripHelperHDR.jpg');
+    background-repeat: no-repeat;
+    background-position: center top 47px;
+    background-size:100% 600px;
+}
+#TripCost{
+    height: 600px;
+    position: relative;
+    background-image:url('../images/TripCostHDR.png');
+    background-repeat: no-repeat;
+    background-position: center top 47px;
+    background-size:100% 570px;
+}
+#About{
+    height: 600px;
+    position: relative;
+    background-image:url('../images/ABOUTBNR.png');
+    background-repeat: no-repeat;
+    background-position: center top 47px;
+    background-size:100% 570px;
+}
+header h1{font-size: 55px;
+text-align:left;
+position:absolute;
+top:30%;
+left:65%;}
+
+header p{font-size:45px;
+text-align:left;
+position:absolute;
+top:40%;
+left:65%;}
+#TripCost > h1{font-size: 55px;
+    text-align:left;
+    position:absolute;
+    top:30%;
+    left:65%;}
+    
+#TripCost > p p{font-size:45px;
+    text-align:left;
+    position:absolute;
+    top:40%;
+    left:65%;}
+fieldset{
+    font-size:30px;
+    margin:20px;
+    background-color:greenyellow;
+    border:1px solid darkgreen;
+    border-radius:3px;
+    padding:1px;
+    width:100%;
+}
+fieldset label{
+    margin-left:10px;
+}
+fieldset select{
+    margin:12px;
+    font-size:30px;
+}
+#info{
+    margin-left:10px;
+}
+#info select{
+    margin:12px;
+}
+legend{
+    background-color:greenyellow;
+    color:black;
+    font-weight:bold;
+    font-size:40px
+}
+label{display:block;}
+#mapFrame {
+    flex:2 1 500px;
+    min-width:350px;
+    margin-left:10px;
+    margin-top:15px;
+    border-radius:8px;
+    height:400px;
+}
+#stationList{
+    width:30%;
+    border:1px solid grey;
+    background-color:whitesmoke;
+}
+
+#instructions{
+    width:99%;
+    background-color:greenyellow;
+    border-radius:3px;
+    border:1px solid darkgreen;
+    margin-top:50px;
+    margin-left:20px;
+}
+#instructions h4{
+    margin-top: 10px;
+    margin-left:20px;
+    font-size:40px;
+}
+#instructions ul{
+    margin-top:10px;
+    margin-left:60px;
+    margin-bottom:10px;
+    font-size:30px;
+}
+h2{margin:20px;
+font-size:40px;}
+/* implementing a transitioning submit and clear buttom */
+input[type="submit"]{
+    font-size:22px;
+    margin-left:10px;
+    margin-bottom:10px;
+    background:darkgrey;
+    transition:background .5s;
+}
+input[type="reset"]{
+    font-size:22px;
+    margin-left:10px;
+    margin-bottom:10px;
+    background:darkgrey;
+    transition:background .7s;
+}
+input[type="submit"]:hover{
+    background:darkgreen;
+}
+input[type="reset"]:hover{
+    background:red;
+}
+#error-message{
+margin-left:50px;
+font-size:100px;
+color:red;}
+.success-message{
+    background-color: whitesmoke;
+    color:black;
+    border:1px solid black;
+}
+/* CSS for page 2 */
+#tripCostCalc{
+    background:greenyellow;
+    border: 1px solid lightgreen;
+    padding:10px;
+    margin:auto;
+}
+.formFlex{
+    margin-bottom:5px;
+}
+.formFlex > label{font-size:25px;
+    display:block;
+    margin:2px;
+}
+input[type = "number"] {
+    width:100%;
+    font-size:25px;
+    border:1px solid lightgreen;
+}
+#costResult{
+    font-size:25px;
+    font-weight:bold;
+    border:2px solid black;
+    margin-top:10px;
+    background:white;
+    border-radius:3px;
+}
+h5{
+    font-size:30px;
+    margin:5px;
+}
+#story{
+    padding-top:20px;
+    padding:10px;
+    margin:10px;
+    text-align:center;
+    width:100%;
+}
+#story > p{
+
+    font-size:25px;
+}
+#video{
+    display:block;
+    margin:0 auto;
+    padding-bottom:30px;
+    width:960px;
+    height:540px;
+    text-align:center;
+}
+#contact{
+    background:darkgreen;
+    border:1px solid black;
+    max-width:500px;
+}
+#ContactRow{
+    margin-bottom:15px;
+}
+#ContactRow label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:5px;
+
+}
+#ContactRow input{
+    width:100%;
+    padding:10px;
+    border:1px solid black;
+}
+#ContactResult{
+    margin-top:10px;
+    padding:10px;
+}
+/* media querys for mobile compatability. */
+@media(max-width:1200px){
+    .routeFlex{
+        flex-direction: column;
+        gap:10px;
+    }
+    #mapFrame, form{
+        min-width: 0; max-width:100%;
+    }
+    header h1{
+        font-size:45px;
+    }
+    header p{
+        font-size:35px;
+    }
+}
+@media(max-width:992px) {
+    #TripCost{
+        height:400px;
+        background-size:auto 400px;
+    }
+    #About{
+        height:400px;
+        background-size:auto 400px;
+    }
+    header{
+        height:400px;
+        background-size:auto 400px;
+    }
+    header h1{
+        font-size:40px;
+        left:50%;
+        transform: translateX(-50%);
+        width:90%;
+        text-align:center;
+    }
+    header p {font-size:30px;
+    left:50%;
+    transform: translateX(-50%);
+    top:50%;
+    width:90%;
+    text-align:center}
+    .routeFlex{
+        flex-direction: column;
+        gap:20px;
+    }
+}
+@media (max-width:768px){
+    #instructions h4{font-size : 30px;}
+    #instructions ul{font-size : 25px;}
+
+    fieldset{
+        font-size: 25px;
+        margin:10px;
+        padding:15px;
+    }
+}
+@media(max-width:576px){
+    header h1{font-size:30px;}
+    header p{font-size:22px;}
+    #instructions h4{font-size: 25px;}
+    #instructions ul{font-size: 20px;
+    margin-left:20px;}
+    fieldset{
+        font-size: 20px;
+        padding:10px;
+    }
+
+}
